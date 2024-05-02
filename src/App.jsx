@@ -78,7 +78,7 @@ export default function App() {
   }, [fetchDomains, showToast, hash]);
 
   // Fetch the data about the domains on page load
-  useEffect(() => fetchDomains(), [fetchDomains]);
+  useEffect(() => { fetchDomains() }, [fetchDomains]);
 
   const handleConnect = () => {
     try {
